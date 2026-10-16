@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Audra L. Boone | Colorado State University</title>
+<meta name="description" content="Audra L. Boone, Dr. Ajay Menon Professor in Business at Colorado State University. Research on mergers and acquisitions, corporate governance, and disclosure.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --accent:#1E4D2B; --accent-dark:#123019;
+    --ink:#1C211E; --ink2:#3C433F; --ink3:#4A514D; --muted:#6B716D;
+    --bg:#FBFAF7; --band:#F3F1EA; --line:#E4E1D8; --card:#FFFFFF;
+    --serif:'Newsreader', Georgia, serif;
+    --sans:'Public Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.6}
+  a{color:var(--accent);text-underline-offset:3px;text-decoration-thickness:1px}
+  a:hover{color:var(--accent-dark)}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+  h1,h2,h3{font-family:var(--serif);font-weight:400;margin:0}
+  h2{font-size:40px;line-height:1.15}
+  section{scroll-margin-top:80px}
+
+  header{position:sticky;top:0;z-index:10;background:rgba(251,250,247,.95);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+  .bar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 32px;padding-top:14px;padding-bottom:14px}
+  .brand{font-family:var(--serif);font-size:22px;font-weight:500;color:var(--ink);text-decoration:none}
+  nav{display:flex;flex-wrap:wrap;gap:0 22px;font-size:15px;font-weight:500}
+  nav a{color:var(--ink2);text-decoration:none;padding:10px 0}
+  nav a:hover{color:var(--accent)}
+
+  .btn{display:inline-block;padding:13px 23px;border-radius:4px;font-weight:600;font-size:16px;text-decoration:none;border:1px solid var(--accent);background:var(--accent);color:#fff}
+  .btn:hover{background:var(--accent-dark);border-color:var(--accent-dark);color:#fff}
+  .btn.ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
+  .btn.ghost:hover{background:var(--ink);color:#fff}
+
+  .hero{display:flex;flex-wrap:wrap;gap:56px;align-items:center;padding-top:88px;padding-bottom:72px}
+  .hero-text{flex:999 1 520px;min-width:0}
+  .eyebrow{font-size:14px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:20px}
+  .hero h1{font-size:clamp(40px,6vw,64px);line-height:1.05;margin-bottom:28px;letter-spacing:-.01em}
+  .lede{font-size:19px;color:var(--ink2);margin:0 0 36px;max-width:620px}
+  .actions{display:flex;flex-wrap:wrap;gap:12px}
+  .photo{flex:1 1 280px;max-width:340px}
+  .photo img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:4px;display:block;background:#E9E6DC}
+
+  .band{background:var(--band);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:28px 40px;padding-top:36px;padding-bottom:36px}
+  .stat b{display:block;font-family:var(--serif);font-weight:400;font-size:40px;line-height:1.1}
+  .stat span{font-size:15px;color:var(--ink3)}
+
+  .block{padding-top:96px}
+  .intro{color:var(--ink2);margin:12px 0 48px;max-width:680px}
+  .themes{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
+  .theme{border-top:3px solid var(--accent);padding-top:20px}
+  .theme h3{font-size:24px;font-weight:500;margin-bottom:10px}
+  .theme p{margin:0;color:var(--ink2);font-size:16px}
+
+  .head-row{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:24px}
+  .head-row a{font-weight:600;font-size:15px}
+  .pubs{list-style:none;margin:0;padding:0}
+  .pubs li{display:flex;flex-wrap:wrap;gap:4px 32px;padding:20px 0;border-bottom:1px solid var(--line)}
+  .yr{flex:0 0 64px;font-size:15px;color:var(--muted);padding-top:3px}
+  .pt{flex:999 1 400px;min-width:0}
+  .pt a{font-family:var(--serif);font-size:21px;color:var(--ink);text-decoration:none;line-height:1.35}
+  .pt a:hover{color:var(--accent);text-decoration:underline}
+  .co{font-size:15px;color:var(--ink3);margin-top:4px}
+  .jn{flex:1 0 200px;font-size:15px;font-style:italic;color:var(--ink2);padding-top:3px}
+
+  details{margin-top:28px}
+  summary{display:inline-block;cursor:pointer;list-style:none;padding:12px 20px;border:1px solid var(--ink);border-radius:4px;font-weight:600;font-size:15px}
+  summary::-webkit-details-marker{display:none}
+  summary:hover{background:var(--ink);color:#fff}
+  details[open] summary{margin-bottom:12px}
+  .full{margin:0;padding-left:24px}
+  .full li{padding:10px 0;border-bottom:1px solid var(--line);font-size:15px;color:var(--ink2)}
+  .full li a{color:var(--ink);font-weight:500}
+  .full h3{font-size:22px;margin:28px 0 4px;list-style:none}
+
+  .wps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:0 40px}
+  .wps li{padding:18px 0;border-bottom:1px solid var(--line)}
+  .wps .t{font-family:var(--serif);font-size:19px;line-height:1.35}
+  .wps .co a{font-weight:600}
+
+  .career{display:flex;flex-wrap:wrap;gap:56px}
+  .career-side{flex:1 1 280px;min-width:0}
+  .career-side p{color:var(--ink2);font-size:16px;margin:16px 0 0}
+  .timeline{flex:999 1 520px;min-width:0;list-style:none;margin:0;padding:0}
+  .timeline li{display:flex;flex-wrap:wrap;gap:2px 24px;padding:16px 0;border-bottom:1px solid var(--line)}
+  .timeline .y{flex:0 0 130px;font-size:15px;color:var(--muted)}
+  .timeline .r{flex:1 1 320px;min-width:0}
+  .timeline .r b{font-weight:600;display:block}
+  .timeline .r span{font-size:15px;color:var(--ink3)}
+
+  .contact{margin:96px 0;border:1px solid #D9D5C9;border-radius:4px;padding:48px;background:var(--card);display:flex;flex-wrap:wrap;gap:32px;justify-content:space-between;align-items:center}
+  .contact-text{flex:999 1 420px;min-width:0}
+  .contact-text h2{font-size:36px;margin-bottom:12px}
+  .contact-text p{margin:0;color:var(--ink2)}
+  .contact-links{flex:1 1 220px;display:flex;flex-direction:column;gap:10px;text-align:center}
+  footer{border-top:1px solid var(--line);font-size:14px;color:var(--muted)}
+  footer .wrap{padding-top:28px;padding-bottom:28px}
+
+  @media (max-width:600px){
+    h2{font-size:32px}
+    .hero{padding-top:48px;gap:36px}
+    .block{padding-top:64px}
+    .contact{padding:28px}
+    header{position:static}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="#top">Audra L. Boone</a>
+    <nav aria-label="Main">
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#working-papers">Working Papers</a>
+      <a href="#career">Career</a>
+      <a href="https://drive.google.com/file/d/1T6z7HFv46mNnHm0Ysr9Kq9CgsTw4JIZU/view?usp=sharing">CV</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section id="top" class="wrap hero">
+  <div class="hero-text">
+    <div class="eyebrow">Financial Economics · Corporate Finance</div>
+    <h1>Research on mergers and acquisitions, corporate governance, and disclosure.</h1>
+    <p class="lede">I am the Dr. Ajay Menon Professor in Business at Colorado State University, a former senior financial economist at the U.S. Securities and Exchange Commission, and an Associate Editor of the Journal of Corporate Finance.</p>
+    <div class="actions">
+      <a class="btn" href="#publications">View research</a>
+      <a class="btn ghost" href="https://drive.google.com/file/d/1T6z7HFv46mNnHm0Ysr9Kq9CgsTw4JIZU/view?usp=sharing">Download CV</a>
+    </div>
+  </div>
+  <div class="photo">
+    <img src="headshot.jpg" alt="Audra L. Boone">
+  </div>
+</section>
+
+<section class="band" aria-label="At a glance">
+  <div class="wrap stats">
+    <div class="stat"><b>8,000+</b><span>Google Scholar citations</span></div>
+    <div class="stat"><b>25</b><span>Publications, including JF, JFE, and RFS</span></div>
+    <div class="stat"><b>SEC</b><span>Senior Financial Economist and Visiting Scholar in Litigation Economics</span></div>
+    <div class="stat"><b>JCF</b><span>Associate Editor, Journal of Corporate Finance</span></div>
+  </div>
+</section>
+
+<section id="research" class="wrap block">
+  <h2>Research</h2>
+  <p class="intro">My work appears in leading finance, accounting, and law journals and focuses on three connected questions about how firms are sold, governed, and seen by investors.</p>
+  <div class="themes">
+    <div class="theme"><h3>Mergers and acquisitions</h3><p>The private phase of the bidding process, including auctions versus negotiations, the winner's curse, termination provisions, appraisal litigation, and internal M&amp;A teams.</p></div>
+    <div class="theme"><h3>Corporate governance</h3><p>Board size and composition, ownership stakes in subsidiaries after divestitures, specialized equity claims, and bankruptcy spillovers across strategic alliances.</p></div>
+    <div class="theme"><h3>Disclosure</h3><p>Institutional and index ownership and the information environment, redaction at the IPO, foreign issuer disclosure on Form 6-K, and the CEO pay ratio.</p></div>
+  </div>
+</section>
+
+<section id="publications" class="wrap block">
+  <div class="head-row">
+    <h2>Selected publications</h2>
+    <a href="https://scholar.google.com/citations?user=H6FAN98AAAAJ&amp;hl=en">Google Scholar profile</a>
+  </div>
+  <ol class="pubs">
+    <li><div class="yr">2025</div><div class="pt"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3070375">Product Similarity, Benchmarking, and Corporate Fraud</a><div class="co">with William Grieser, Rachel Li, and Parth Venkat</div></div><div class="jn">Journal of Financial and Quantitative Analysis</div></li>
+    <li><div class="yr">2024</div><div class="pt"><a href="https://papers.ssrn.com/sol3/Papers.cfm?abstract_id=3481540">The Saliency of the CEO Pay Ratio</a><div class="co">with Austin Starkweather and Joshua White</div></div><div class="jn">Review of Finance</div></li>
+    <li><div class="yr">2021</div><div class="pt"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2626969">Ongoing SEC Disclosures by Foreign Firms</a><div class="co">with Kathryn Schumann and Joshua White</div></div><div class="jn">The Accounting Review</div></li>
+    <li><div class="yr">2019</div><div class="pt"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3039040">Merger Negotiations in the Shadow of Judicial Appraisal</a><div class="co">with Brian Broughman and Antonio Macias</div></div><div class="jn">Journal of Law and Economics</div></li>
+    <li><div class="yr">2016</div><div class="pt"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2348184">Redacting Proprietary Information at the IPO</a><div class="co">with Ioannis Floros and Shane Johnson</div></div><div class="jn">Journal of Financial Economics</div></li>
+    <li><div class="yr">2015</div><div class="pt"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2528891">The Effect of Institutional Ownership on Firm Transparency and Information Production</a><div class="co">with Joshua White</div></div><div class="jn">Journal of Financial Economics</div></li>
+    <li><div class="yr">2008</div><div class="pt"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=902488">Do Auctions Induce a Winner’s Curse? New Evidence from the Corporate Takeover Market</a><div class="co">with Harold Mulherin</div></div><div class="jn">Journal of Financial Economics</div></li>
+    <li><div class="yr">2007</div><div class="pt"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=642306">How Are Firms Sold?</a><div class="co">with Harold Mulherin</div></div><div class="jn">Journal of Finance</div></li>
+  </ol>
+
+  <details id="all-publications">
+    <summary>All 25 publications</summary>
+    <h3>Refereed publications</h3>
+    <ol class="full">
+      <li><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3070375">Product Similarity, Benchmarking, and Corporate Fraud</a>, with William Grieser, Rachel Li, and Parth Venkat, 2025, <i>Journal of Financial and Quantitative Analysis</i> 60(7), 3195–3227.</li>
+      <li><a href="https://papers.ssrn.com/sol3/Papers.cfm?abstract_id=3481540">The Saliency of the CEO Pay Ratio</a>, with Austin Starkweather and Joshua White, 2024, <i>Review of Finance</i> 28, 1059–1104.</li>
+      <li><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3106086">Shareholder Litigation and the Information Environment: Revisiting Evidence from Two Natural Experiments</a>, with Eliezer Fich and Thomas Griffin, 2023, <i>Journal of Corporate Finance</i> 82, 102444.</li>
+      <li><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3140400">The Role of Internal M&amp;A Teams in Takeovers</a>, with Nihat Aktas, Alexander Witkowski, Guosong Xu, and Burcin Yurtoglu, 2021, <i>Review of Finance</i> 25, 1047–1088.</li>
+      <li><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3321049">Reductions in CEO Career Horizons and Corporate Policies</a>, with Nihat Aktas, Ettore Croci, and Andrea Signori, 2021, <i>Journal of Corporate Finance</i> 66, 101862.</li>
+      <li><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2626969">Ongoing SEC Disclosures by Foreign Firms</a>, with Kathryn Schumann and Joshua White, 2021, <i>The Accounting Review</i> 96, 91–120.</li>
+      <li><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2017277">Reputational Concerns and the Market for Corporate Control</a>, with Vahap Uysal, 2020, <i>Journal of Corporate Finance</i> 61, 101399.</li>
+      <li><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3039040">Merger Negotiations in the Shadow of Judicial Appraisal</a>, with Brian Broughman and Antonio Macias, 2019, <i>Journal of Law and Economics</i> 62, 281–319. <a href="https://drive.google.com/open?id=1h6cR1EFG-NLeQXziopxjJdyPdUaEy0C7">Internet Appendix</a></li>
+      <li><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2629424">Shareholder Decision Rights in Acquisitions: Evidence from Mergers versus Tender Offers</a>, with Brian Broughman and Antonio Macias, 2018, <i>Journal of Corporate Finance</i> 53, 225–245. <a href="https://drive.google.com/open?id=1D8Fymq5P4dw0ZufjHqJ6mwud4z3LcPnR">Internet Appendix</a></li>
+      <li><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1104224">Who Monitors the Monitor? The Use of Special Committees by Target Firms in Corporate Takeovers</a>, with Harold Mulherin, 2017, <i>Journal of Corporate Finance</i> 44, 388–404.</li>
+      <li><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2348184">Redacting Proprietary Information at the IPO</a>, with Ioannis Floros and Shane Johnson, 2016, <i>Journal of Financial Economics</i> 120(1), 102–123.</li>
+      <li><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2528891">The Effect of Institutional Ownership on Firm Transparency and Information Production</a>, with Joshua White, 2015, <i>Journal of Financial Economics</i> 117(3), 508–533.</li>
+      <li><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1536128">Time Trends and Determinants of the Method of Payment in M&amp;As</a>, with Erik Lie and Yixin Liu, 2014, <i>Journal of Corporate Finance</i> 27, 296–304.</li>
+      <li><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1572572">Bankruptcy Spillover Effects on Strategic Alliance Partners</a>, with Vladimir Ivanov, 2012, <i>Journal of Financial Economics</i> 103(3), 551–569.</li>
+      <li><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2553020">Do Private Equity Consortiums Facilitate Collusion in Takeover Bidding?</a>, with Harold Mulherin, 2011, <i>Journal of Corporate Finance</i> 17(5), 1475–1495.</li>
+      <li><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=686376">Is There Shareholder Expropriation in the U.S.? An Analysis of Publicly-Traded Subsidiaries</a>, with Vladimir Atanasov and David Haushalter, 2010, <i>Journal of Financial and Quantitative Analysis</i> 45(1), 1–26.</li>
+      <li><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=902488">Do Auctions Induce a Winner’s Curse? New Evidence from the Corporate Takeover Market</a>, with Harold Mulherin, 2008, <i>Journal of Financial Economics</i> 89(1), 1–19. Reprinted in <i>Corporate Takeovers: Modern Empirical Developments</i>, edited by Espen Eckbo.</li>
+      <li><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=605762">The Determinants of Corporate Board Size and Composition: An Empirical Analysis</a>, with Laura Field, Jonathan Karpoff, and Charu Raheja, 2007, <i>Journal of Financial Economics</i> 85(1), 65–101.</li>
+      <li><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=642306">How Are Firms Sold?</a>, with Harold Mulherin, 2007, <i>Journal of Finance</i> 62(2), 847–875.</li>
+      <li><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=902488">Do Termination Provisions Truncate the Takeover Bidding Process?</a>, with Harold Mulherin, 2007, <i>Review of Financial Studies</i> 20(2), 461–489.</li>
+      <li><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=395882">An Investigation of the Gains from Specialized Equity Claims</a>, with David Haushalter and Wayne Mikkelson, 2003, <i>Financial Management</i> 32(3), 5–21.</li>
+      <li><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=218145">Comparing Acquisitions and Divestitures</a>, with Harold Mulherin, 2000, <i>Journal of Corporate Finance</i> 6(2), 117–139. Reprinted in <i>Mergers and Corporate Governance</i>, edited by Harold Mulherin, in <i>Corporate Restructuring</i>, edited by John McConnell and David Denis, and in <i>CFA Digest</i> 31(1), 2001.</li>
+    </ol>
+    <h3>Other publications</h3>
+    <ol class="full" start="23">
+      <li><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4126431">The Private Deal Process in Mergers and Acquisitions</a>, with Nihat Aktas, 2024, in <i>Handbook of Corporate Finance</i>, edited by David Denis, Edward Elgar Publishing.</li>
+      <li><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3659605">Do Appraisal Challenges Benefit Target Shareholders Through Narrowing Arbitrage Spread? A Reply</a>, with Brian Broughman and Antonio Macias, 2020, <i>Journal of Law and Economics</i> 63(4), 817–820.</li>
+      <li><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1495295">Is There One Best Way to Sell a Company? Auctions versus Negotiations and Controlled Sales</a>, with Harold Mulherin, 2009, <i>Journal of Applied Corporate Finance</i> 21(3), 28–38.</li>
+    </ol>
+  </details>
+</section>
+
+<section id="working-papers" class="wrap block">
+  <h2 style="margin-bottom:24px">Working papers</h2>
+  <ul class="wps">
+    <li><div class="t">Disclosure Incentives and Bondholder Bargaining Power</div><div class="co">with Terrence Blackburne and Xin Fan</div></li>
+    <li><div class="t">Unravelling Bidding Strategies in M&amp;A Transactions: Evidence from the Private Phase of the Deal Process</div><div class="co">with Wouter De Maeseneire, Sébastien Dereeper, Mathieu Luypaert, and Mai Nguyen Thuy · <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4964800">SSRN</a></div></li>
+    <li><div class="t">Contractual Risk-Sharing via Indemnification in Private Target Acquisitions</div><div class="co">with Disen Huang Albrecht and Patrick Hopkins</div></li>
+    <li><div class="t">Public Expenditures and Racial Disparities: Real Effects of State Municipal Restructuring Policies</div><div class="co">with Xin Fan and John Hund · <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4613934">SSRN</a></div></li>
+    <li><div class="t">Institutional Investor Portfolio Diversification and Corporate Diversification</div><div class="co">with Hursit Celil, Seunjoon Oh, and Srinivasan Selvam · <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3700235">SSRN</a></div></li>
+    <li><div class="t">Local Policy Uncertainty and Firm Disclosure</div><div class="co">with Y. Abby Kim and Joshua White · <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3003157">SSRN</a></div></li>
+    <li><div class="t">The Role of Proxy Advisors and Large Passive Funds in Shareholder Voting: Lions or Lambs?</div><div class="co">with Stuart Gillan and Mitch Towner · <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2831550">SSRN</a></div></li>
+    <li><div class="t">Is the Bottom Line the Top Priority? Revenue versus Earnings Guidance</div><div class="co">with Craig Lewis, Austin Starkweather, and Joshua White</div></li>
+  </ul>
+</section>
+
+<section id="career" class="wrap block career">
+  <div class="career-side">
+    <h2>Career</h2>
+    <p>Ph.D. in Finance, Pennsylvania State University, 2002. B.S. in Business Administration, University of Kansas, 1997.</p>
+    <p>Research Member, <a href="https://www.ecgi.global/">European Corporate Governance Institute</a>. Affiliated Researcher, <a href="https://hkujcesgri.hku.hk/">HKU Jockey Club Enterprise Sustainability Global Research Institute</a>.</p>
+  </div>
+  <ol class="timeline">
+    <li><div class="y">2025 to present</div><div class="r"><b>Colorado State University, College of Business</b><span>Professor of Finance and Real Estate, Dr. Ajay Menon Professor in Business</span></div></li>
+    <li><div class="y">2016 to 2025</div><div class="r"><b>Texas Christian University, Neeley School of Business</b><span>Professor of Finance, C.R. Williams Professorship in Financial Services</span></div></li>
+    <li><div class="y">Fall 2018</div><div class="r"><b>Vanderbilt University, Owen Graduate School of Management</b><span>Visiting Professor</span></div></li>
+    <li><div class="y">2015 to 2016</div><div class="r"><b>U.S. Securities and Exchange Commission, DERA</b><span>Senior Financial Economist, Office of Financial Intermediaries</span></div></li>
+    <li><div class="y">2011 to 2015</div><div class="r"><b>Texas A&amp;M University, Mays Business School</b><span>Associate Professor of Finance, Gina and William H. Flores ’76 Endowed Professorship</span></div></li>
+    <li><div class="y">2014 to 2015</div><div class="r"><b>University of Texas at Austin, McCombs School of Business</b><span>Visiting Associate Professor</span></div></li>
+    <li><div class="y">2012 to 2013</div><div class="r"><b>U.S. Securities and Exchange Commission, DERA</b><span>Visiting Scholar, Office of Litigation Economics</span></div></li>
+    <li><div class="y">2005 to 2011</div><div class="r"><b>University of Kansas, School of Business</b><span>Assistant then Associate Professor of Finance, Fred Ball Faculty Fellow</span></div></li>
+    <li><div class="y">2002 to 2005</div><div class="r"><b>College of William &amp; Mary, Mason School of Business</b><span>Assistant Professor of Finance</span></div></li>
+  </ol>
+</section>
+
+<section id="contact" class="wrap">
+  <div class="contact">
+    <div class="contact-text">
+      <h2>Get in touch</h2>
+      <p>Department of Finance and Real Estate, College of Business, Colorado State University</p>
+      <p style="margin-top:8px;font-weight:600;color:var(--ink)">audra.boone at colostate dot edu</p>
+      <p style="margin-top:16px;font-size:15px;color:var(--ink3)">I welcome inquiries about research collaboration, speaking, and consulting.</p>
+    </div>
+    <div class="contact-links">
+      <a class="btn" href="https://drive.google.com/file/d/1T6z7HFv46mNnHm0Ysr9Kq9CgsTw4JIZU/view?usp=sharing">Download CV</a>
+      <a class="btn ghost" href="https://scholar.google.com/citations?user=H6FAN98AAAAJ&amp;hl=en">Google Scholar</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap">© 2026 Audra L. Boone</div></footer>
+</body>
+</html>
